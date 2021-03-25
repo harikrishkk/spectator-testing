@@ -1,0 +1,18 @@
+<div class="ui container">
+  <section *ngIf="isClicked" class="ui warning message mt-3">
+    <div class="header">Registration successful!</div>
+  </section>
+  <app-button
+    (onBtnClick)="handleClick($event)"
+    [btnClass]="'primary'"
+  ></app-button>
+
+  <app-person></app-person>
+
+  <hr />
+
+  <h4>Total Users Online</h4>
+  <button class="ui circular google plus icon button">
+    <app-total></app-total>
+  </button>
+</div>
